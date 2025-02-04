@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "uD0EPNkTtHdlNPRViayNlOjnhl3F8shlRPLxoI+tNTM=",
+  "Source": "RestAPI",
+  "BasePath": "_content/RestAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

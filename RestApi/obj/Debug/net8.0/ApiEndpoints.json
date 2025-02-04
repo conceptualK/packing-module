@@ -1,0 +1,280 @@
+[
+  {
+    "ContainingType": "RestAPI.Controllers.BackflushAutoControllr",
+    "Method": "PostWithModelWithFromBody",
+    "RelativePath": "api/BackflushAutoControllr",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.model_info",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.BackflushAutoControllr",
+    "Method": "Get",
+    "RelativePath": "api/BackflushAutoControllr/viewer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.BOMInfomationController",
+    "Method": "Get",
+    "RelativePath": "api/BOMInfomation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.BOMInfomationController",
+    "Method": "DeleteBom",
+    "RelativePath": "api/BOMInfomation/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.BOMInfomationController\u002Bbom_delete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.BOMInfomationController",
+    "Method": "Get_info",
+    "RelativePath": "api/BOMInfomation/info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.BOMInfomationController",
+    "Method": "InsertBom",
+    "RelativePath": "api/BOMInfomation/insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.BOMInfomationController\u002Bbom_insert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.BOMInfomationController",
+    "Method": "SelectBom",
+    "RelativePath": "api/BOMInfomation/select",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.BOMInfomationController\u002Bprocess_info",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.BOMInfomationController",
+    "Method": "UpdateBom",
+    "RelativePath": "api/BOMInfomation/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.BOMInfomationController\u002Bbom_update",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.MOInfomationController",
+    "Method": "Get",
+    "RelativePath": "api/MOInfomation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.MOInfomationController",
+    "Method": "GetExample",
+    "RelativePath": "api/MOInfomation/example_fetch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.MOInfomationController",
+    "Method": "SelectPartInBOM",
+    "RelativePath": "api/MOInfomation/partinbom",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.MOInfomationController\u002Bpart_inbom",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.MOInfomationController",
+    "Method": "SelectPartInProcess",
+    "RelativePath": "api/MOInfomation/partinprocess",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.MOInfomationController\u002Bpart_info",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.MOInfomationController",
+    "Method": "request_workorder",
+    "RelativePath": "api/MOInfomation/request_uuid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.MOInfomationController\u002Brequest_wo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.MOInfomationController",
+    "Method": "RequestOdoo",
+    "RelativePath": "api/MOInfomation/requestmo_base",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.MOInfomationController\u002Brequest_odoo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.MOInfomationController",
+    "Method": "PostWithModelWithFromBody",
+    "RelativePath": "api/MOInfomation/select",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.MOInfomationController\u002Bmo_info",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.MOInfomationController",
+    "Method": "GetPart",
+    "RelativePath": "api/MOInfomation/update_part",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.PartInfomationController",
+    "Method": "Get",
+    "RelativePath": "api/PartInfomation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.Info.PartInfomationController",
+    "Method": "PostWithModelWithFromBody",
+    "RelativePath": "api/PartInfomation/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.Info.link",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Email_API.Controllers.SendEmailController",
+    "Method": "SendEmail",
+    "RelativePath": "api/SendEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Email_API.Controllers.SendEmailController\u002BEmailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.uLoginController",
+    "Method": "PostWithModelWithFromBody",
+    "RelativePath": "api/uLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RestAPI.Controllers.uLoginController\u002Blogin_info",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

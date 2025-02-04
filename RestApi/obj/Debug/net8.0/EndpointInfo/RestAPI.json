@@ -1,0 +1,729 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Data tranfer MES to ERP",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/BackflushAutoControllr": {
+      "post": {
+        "tags": [
+          "BackflushAutoControllr"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/model_info"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/model_info"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/model_info"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BackflushAutoControllr/viewer": {
+      "get": {
+        "tags": [
+          "BackflushAutoControllr"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BOMInfomation": {
+      "get": {
+        "tags": [
+          "BOMInfomation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BOMInfomation/info": {
+      "get": {
+        "tags": [
+          "BOMInfomation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BOMInfomation/insert": {
+      "post": {
+        "tags": [
+          "BOMInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_insert"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_insert"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_insert"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BOMInfomation/update": {
+      "post": {
+        "tags": [
+          "BOMInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_update"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_update"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BOMInfomation/delete": {
+      "post": {
+        "tags": [
+          "BOMInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_delete"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_delete"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/bom_delete"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BOMInfomation/select": {
+      "post": {
+        "tags": [
+          "BOMInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/process_info"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/process_info"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/process_info"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MOInfomation": {
+      "get": {
+        "tags": [
+          "MOInfomation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MOInfomation/update_part": {
+      "get": {
+        "tags": [
+          "MOInfomation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MOInfomation/partinprocess": {
+      "post": {
+        "tags": [
+          "MOInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/part_info"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/part_info"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/part_info"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MOInfomation/partinbom": {
+      "post": {
+        "tags": [
+          "MOInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/part_inbom"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/part_inbom"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/part_inbom"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MOInfomation/select": {
+      "post": {
+        "tags": [
+          "MOInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/mo_info"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/mo_info"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/mo_info"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MOInfomation/request_uuid": {
+      "post": {
+        "tags": [
+          "MOInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/request_wo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/request_wo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/request_wo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MOInfomation/example_fetch": {
+      "get": {
+        "tags": [
+          "MOInfomation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MOInfomation/requestmo_base": {
+      "post": {
+        "tags": [
+          "MOInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/request_odoo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/request_odoo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/request_odoo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PartInfomation": {
+      "get": {
+        "tags": [
+          "PartInfomation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PartInfomation/update": {
+      "post": {
+        "tags": [
+          "PartInfomation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/link"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/link"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/link"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SendEmail": {
+      "post": {
+        "tags": [
+          "SendEmail"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/uLogin": {
+      "post": {
+        "tags": [
+          "uLogin"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/login_info"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/login_info"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/login_info"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "EmailRequest": {
+        "type": "object",
+        "properties": {
+          "recipient": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "subject": {
+            "type": "string",
+            "nullable": true
+          },
+          "text": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "bom_delete": {
+        "type": "object",
+        "properties": {
+          "bom_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "process_desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          },
+          "part_list": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "bom_insert": {
+        "type": "object",
+        "properties": {
+          "part_desc": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "process_desc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "bom_update": {
+        "type": "object",
+        "properties": {
+          "bom_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "process_desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          },
+          "part_list": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "link": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_link": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "login_info": {
+        "type": "object",
+        "properties": {
+          "emp_no": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "mo_info": {
+        "type": "object",
+        "properties": {
+          "process_desc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "model_info": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "part_id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "part_inbom": {
+        "type": "object",
+        "properties": {
+          "bom_id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "part_info": {
+        "type": "object",
+        "properties": {
+          "part_no": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "process_info": {
+        "type": "object",
+        "properties": {
+          "bom_id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "request_odoo": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "nullable": true
+          },
+          "bom_erp": {
+            "type": "string",
+            "nullable": true
+          },
+          "process_desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "part_s": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "target_s": {
+            "type": "string",
+            "nullable": true
+          },
+          "part_desc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "request_wo": {
+        "type": "object",
+        "properties": {
+          "bom_erp": {
+            "type": "string",
+            "nullable": true
+          },
+          "part_s": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "target_s": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
